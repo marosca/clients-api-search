@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require('cors')
 const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
+app.use(cors())
 
 // dummy data for student collection
 const clients = [
@@ -71,27 +73,12 @@ const clients = [
 
 // Welcome Message
 app.get("/", (req, res) => {
-  res.send("CodeLab Wilmer Branch Student API");
+  res.send("Go to /client to get api");
 });
 
 // query search
 app.get("/clients", async (req, res) => {
   try {
-    const userQuery = await req.query;
-    // console.log(userQuery)
-    // const filteredStudent = await studentInformations.filter((info) => {
-    //   let isValid = true;
-    //   for (key in userQuery) {
-    //     // console.log(key, userQuery[key], info[key]);
-    //     isValid = isValid && info[key] === userQuery[key];
-    //   }
-    //   return isValid;
-    // });
-
-    // // console.log(filteredStudent)
-    // res.json({ data: filteredStudent })
-
-
     const queries = await req.query
     let filteredClients = clients
 
