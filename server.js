@@ -68,6 +68,36 @@ const clients = [
     name: "Mercadona Murcia",
     iban: "ES57 0168 0013 4051 7243 7152",
   },
+  {
+    id: 13,
+    name: "Mercadona Madrid",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
+  {
+    id: 14,
+    name: "Mercadona Barcelona",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
+  {
+    id: 15,
+    name: "Mercadona Sevilla",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
+  {
+    id: 16,
+    name: "Mercadona Málaga",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
+  {
+    id: 17,
+    name: "Mercadona Cuenca",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
+  {
+    id: 18,
+    name: "Mercadona Zaragoza",
+    iban: "ES57 0168 0013 4051 7243 7152",
+  },
 
 ];
 
